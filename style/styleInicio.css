@@ -1,0 +1,1175 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/*SCROLBAR*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: #940404;
+}
+
+
+/*toda section tem no minimo 75% de altura*/
+section {
+    min-height: 75vh;
+}
+
+#inicio {
+    background: #940404;
+    position: relative;
+    overflow: hidden;
+}
+
+.containerInicio {
+    color: #ffffff;
+    margin-left: 50px;
+    padding-top: 20px;
+}
+
+.containerInicio h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    max-width: 550px;
+    line-height: 1.2;
+}
+
+.containerInicio p {
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 20px;
+    max-width: 520px;
+    line-height: 1.5;
+}
+
+.containerInicio h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 10px;
+    max-width: 700px;
+}
+
+.btnInicio {
+    position: relative;
+    z-index: 10;
+}
+
+.btnProjetos {
+    font-size: 14px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    padding: 15px 15px;
+    outline-offset: 0px;
+    background: #710505;
+    border: 0;
+    font-weight: bolder;
+    color: #ffffff;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.192);
+    overflow: hidden;
+    transition-duration: .3s;
+}
+
+.btnProjetos:hover::before {
+    transform: translate(0, -50%);
+}
+
+.btnProjetos:active {
+    transform: translateY(4px);
+    transition-duration: .3s;
+}
+
+.btnContato {
+    font-size: 14px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    padding: 15px 25px;
+    outline-offset: 0px;
+    background: #ffffff;
+    border: 0;
+    font-weight: bolder;
+    color: #940404;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.192);
+    overflow: hidden;
+    transition-duration: .3s;
+}
+
+.btnContato:hover::before {
+    transform: translate(0, -50%);
+}
+
+.btnContato:active {
+    transform: translateY(4px);
+    transition-duration: .3s;
+}
+
+.btnInicio {
+    margin-left: 50px;
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+
+}
+
+.divisor {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.divisor img {
+    pointer-events: none;
+    width: 1366px;
+    z-index: 1;
+    display: block;
+}
+
+.antenas {
+    position: absolute;
+    bottom: 30px;
+    right: 150px;
+}
+
+.antenas img {
+    pointer-events: none;
+    width: 400px;
+    z-index: 1;
+}
+
+.capaceteInicio {
+    display: none;
+}
+
+/*MOBILE #INICIO*/
+@media screen and (max-width: 1000px) {
+    .capaceteInicio {
+        display: block;
+    }
+
+    .capaceteInicio {
+        width: 90px;
+        margin-bottom: 25px;
+    }
+
+    .containerInicio p {
+        display: none;
+    }
+
+    .containerInicio h1 {
+        max-width: 300px;
+        font-size: 20px;
+    }
+
+    .containerInicio h2 {
+        max-width: 300px;
+        font-size: 20px;
+    }
+
+    .btnContato {
+        display: none;
+    }
+
+    .antenas {
+        display: none;
+    }
+
+}
+
+/*SOBRE NOS*
+DADOS*/
+
+.dados {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dados h3 {
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    color: #940404;
+    margin-top: 20px;
+}
+
+.dadosSobre {
+    position: relative;
+    margin-top: 50px;
+
+}
+
+.grade img {
+    width: 100%;
+    display: block;
+
+}
+
+.dadosSobre h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    position: absolute;
+    top: 14%;
+    left: 47%;
+    color: #940404;
+}
+
+.dadosSobre h2 {
+    font-family: "Crimson Text", serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 34px;
+    max-width: 700px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #940404;
+}
+
+.dadosSobre h4 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 15px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #940404;
+}
+
+/*MOBILE
+SOBRE NOS*
+DADOS*/
+
+@media screen and (max-width: 1000px) {
+    .dados {
+        text-align: center;
+    }
+
+    .dados h3 {
+        font-size: 15px;
+        min-width: 50px;
+    }
+
+    .dadosSobre {
+        position: relative;
+        margin-top: 50px;
+    }
+
+    .dadosSobre h3 {
+        font-size: 17px;
+        top: 10%;
+        left: 40%;
+    }
+
+    .dadosSobre h2 {
+        font-size: 20px;
+        min-width: 300px;
+        top: 40%;
+        left: 50%;
+    }
+
+    .dadosSobre h4 {
+        font-size: 15px;
+        min-width: 350px;
+        top: 75%;
+        left: 50%;
+    }
+
+}
+
+
+
+
+/*SOBRE NOS
+VALORES, HISTORIA e MISSAO*/
+
+/*HISTORIA*/
+
+.containerFlexSobre {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.dadosHistoria {
+    color: #940404;
+    margin-left: 70PX;
+}
+
+.dadosHistoria h3 {
+    margin-top: 60px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    color: #940404;
+}
+
+.dadosHistoria h2 {
+    margin-top: 20px;
+    font-family: "Crimson Text", serif;
+    font-weight: bold;
+    font-size: 34px;
+    max-width: 350px;
+    color: #940404;
+}
+
+.dadosHistoria p {
+    margin-top: 30px;
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    max-width: 420px;
+    line-height: 1.5;
+    color: #940404;
+}
+
+.dadosHistoria span {
+    margin-top: 70px;
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    max-width: 420px;
+    line-height: 1.5;
+    color: #940404;
+}
+
+/*MISSAO*/
+
+.quadradoMissao {
+    width: 500px;
+    height: 500px;
+    background-color: #710505;
+    border-radius: 24px;
+}
+
+.quadradoMissao h3 {
+    margin-top: 60px;
+    margin-left: 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    color: #ffffff;
+}
+
+.quadradoMissao h2 {
+    margin-top: 20px;
+    margin-left: 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 34px;
+    max-width: 350px;
+    color: #ffffff;
+}
+
+.quadradoMissao img {
+    width: 70px;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+
+/*VALORES*/
+.valoresBG {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 90px
+}
+
+.bgValores {
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.containerValoresFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerValoresFlex h2 {
+    font-family: "Crimson Text", serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: #940404;
+    margin-top: 40px;
+    font-size: 50px;
+}
+
+.containerValores {
+    margin-top: 40px;
+    width: 1250px;
+    height: 400px;
+    background-color: #940404;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+}
+
+.containerValores p {
+    color: #ffffff;
+    max-width: 250px;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+.valorFooter {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.containerValores h1 {
+    color: #ffffff;
+}
+
+.containerValores img {
+    width: 90px;
+    pointer-events: none;
+}
+
+/*MOBILE
+SOBRE NÒS
+MISSÃO
+VALORES*/
+
+@media screen and (max-width: 1000px) {
+
+    /* HISTÓRIA + MISSÃO */
+    .containerFlexSobre {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        gap: 40px;
+    }
+
+    .dadosHistoria {
+        margin-left: 0;
+        padding: 0 25px;
+        text-align: left;
+    }
+
+    .dadosHistoria h2 {
+        font-size: 26px;
+        max-width: 100%;
+    }
+
+    .dadosHistoria p {
+        max-width: 100%;
+        font-size: 15px;
+    }
+
+    .dadosHistoria span {
+        display: block;
+        margin-top: 30px;
+        font-size: 14px;
+    }
+
+    /* MISSÃO */
+    .quadradoMissao {
+        width: 90%;
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .quadradoMissao h3,
+    .quadradoMissao h2,
+    .quadradoMissao img {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .quadradoMissao h2 {
+        font-size: 24px;
+        max-width: 100%;
+    }
+
+    .quadradoMissao img {
+        margin-top: 40px;
+        width: 55px;
+    }
+
+    /* VALORES */
+
+    .bgValores {
+        display: none;
+    }
+
+    .containerValoresFlex h2 {
+        font-size: 42px;
+        text-align: center;
+    }
+
+    .containerValores {
+        flex-direction: column;
+        width: 70%;
+        height: auto;
+        padding: 40px 25px;
+        gap: 40px;
+        align-items: flex-start;
+    }
+
+    .containerValores p {
+        max-width: 90%;
+        font-size: 16px;
+        margin-left: 15px;
+    }
+
+    .containerValores img {
+        width: 60px;
+        margin-left: 15px;
+    }
+
+    .valorFooter h1 {
+        font-size: 20px;
+        margin-left: 15px;
+    }
+
+}
+
+/*CARROSEL*/
+#carrossel {
+    background: #940404;
+    overflow: hidden;
+}
+
+.carrossel {
+    margin: 10px auto;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.carrossel::-webkit-scrollbar {
+    display: none;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    animation: spin 30s infinite linear;
+    padding-right: 1em;
+}
+
+.imgCarousel {
+    margin: 0;
+    flex: 0 0 5em;
+    height: 3em;
+    padding: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.imgCarousel img {
+    width: 100px;
+}
+
+@keyframes spin {
+    from {
+        translate: 0;
+    }
+
+    to {
+        translate: -100%;
+    }
+}
+
+/*NOSSOS SERVIÇOS*/
+.servicos {
+    text-align: center;
+    padding: 40px 30px;
+}
+
+.servicos h3 {
+    font-family: "Crimson Text", serif;
+    font-weight: bold;
+    color: #940404;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.servicos h4 {
+    color: #940404;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+.servicosGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+}
+
+.servicoCard img {
+    width: 70px;
+    margin-bottom: 20px;
+}
+
+.servicoCard h5 {
+    color: #940404;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.servicoCard p {
+    color: #940404;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+/*MOBILE
+NOSSOS SERVIÇOS*/
+
+@media screen and (max-width: 1000px) {
+
+    .servicos {
+        padding: 40px 20px;
+    }
+
+    .servicos h3 {
+        font-size: 42px;
+    }
+
+    .servicos h4 {
+        font-size: 14px;
+        margin-bottom: 40px;
+        padding: 0 10px;
+    }
+
+    .servicosGrid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        max-width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .servicoCard {
+        padding: 0 20px;
+    }
+
+    .servicoCard img {
+        width: 85px;
+    }
+
+    .servicoCard h5 {
+        font-size: 20px;
+    }
+
+    .servicoCard p {
+        font-size: 15px;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+}
+
+
+/*PROJETOS*/
+#projetos {
+    background: #940404;
+    display: flex;
+}
+
+.containerProjetos {
+    margin-left: 70px;
+    padding-top: 70px;
+}
+
+.containerProjetos h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+}
+
+.containerProjetos h1 {
+    margin-top: 20px;
+    font-family: "Crimson Text", serif;
+    font-weight: bold;
+    font-size: 50px;
+    max-width: 100px;
+    color: #ffffff;
+}
+
+.containerProjetos p {
+    margin-top: 15px;
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    max-width: 420px;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.containerProjetos button {
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    padding: 18px 25px;
+    outline-offset: 0px;
+    background: #ffffff;
+    border: 0;
+    font-weight: bolder;
+    color: #940404;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.192);
+    overflow: hidden;
+    transition-duration: .3s;
+}
+
+.containerProjetos button:hover::before {
+    transform: translate(0, -50%);
+}
+
+.containerProjetos button:active {
+    transform: translateY(4px);
+    transition-duration: .3s;
+}
+
+
+
+/*PORTFOLIO*/
+/* GRID PRINCIPAL */
+.portfolio {
+    display: grid;
+    grid-template-columns: 0.6fr 0.4fr;
+    grid-template-rows: 320px 260px 260px;
+    gap: 12px;
+    margin-top: 70px;
+    grid-template-areas:
+        "img1 img1"
+        "img2 img3"
+        "img2 img4";
+    padding-left: 140px;
+    margin-right: 20px;
+    margin-bottom: 70px;
+}
+
+/* ÁREAS */
+.img1 {
+    grid-area: img1;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+.img4 {
+    grid-area: img4;
+}
+
+
+.card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: #000;
+}
+
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.card:hover img {
+    transform: scale(1.08);
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0));
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.45s ease, transform 0.45s ease;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.overlay h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.overlay p {
+    color: #ddd;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+/*MOBILE
+PROJETOS*/
+@media screen and (max-width: 1000px) {
+
+    #projetos {
+        flex-direction: column;
+    }
+
+    .containerProjetos {
+        margin-left: 0;
+        padding: 50px 25px 0 25px;
+    }
+
+    .containerProjetos h1 {
+        font-size: 36px;
+        max-width: 200px;
+    }
+
+    .containerProjetos p {
+        max-width: 100%;
+        font-size: 15px;
+    }
+
+    .containerProjetos button {
+        padding: 16px 20px;
+        font-size: 13px;
+    }
+
+    /* PORTFOLIO MOBILE */
+    .portfolio {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "img1"
+            "img2"
+            "img3"
+            "img4";
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-top: 40px;
+        gap: 20px;
+    }
+
+    .img3,
+    .img4 {
+        display: none;
+    }
+
+    .card {
+        height: 250px;
+    }
+
+    
+
+}
+
+/*CONTATO*/
+#contato {
+    background: #ffffff;
+    margin-bottom: 50px;
+}
+
+.containerContatos h3 {
+    font-family: "Crimson Text", serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: #940404;
+    margin-top: 40px;    
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+.contatoWrapper {
+    position: relative;
+}
+
+/* TELEFONE */
+.telefoneDecorativo {
+    position: absolute;
+    left: 70px;
+    top: -70px;
+}
+
+.telefoneDecorativo img {
+    width: 590px;
+    pointer-events: none;
+}
+
+.contatoGrid {
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: 80px;
+    padding-left: 200px;
+    margin-left: 30px;
+}
+
+.contatoItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #940404;
+    margin-bottom: 16px;
+}
+
+.contatoItem img {
+    width: 50px;
+}
+
+.contatoItem span {
+    font-family: "Crimson Text", serif;
+    font-weight: bold;
+}
+
+.contatoInfo h4 {
+    font-family: "Crimson Text", serif;
+    color: #940404;
+}
+
+.contatoInfo p {
+    margin-top: 60px;
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    color: #940404;
+    font-size: 20px;
+}
+
+.contatoItem small {
+    grid-column: 2;
+    font-size: 12px;
+}
+
+.contatoTexto {
+    margin-top: 24px;
+    max-width: 360px;
+    line-height: 1.6;
+    color: #940404;
+}
+
+.contatoForm form {
+    display: grid;
+    gap: 18px;
+    padding-right: 50px;
+    margin-bottom: 150px;
+}
+
+.contatoForm input,
+.contatoForm textarea {
+    background: #e0e0e0;
+    border: none;
+    padding: 14px;
+    font-size: 14px;
+    outline: none;
+}
+
+.contatoForm textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contatoForm button {
+    font-size: 14px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    padding: 15px 36px;
+    outline-offset: 0px;
+    background: #940404;
+    border: 0;
+    font-weight: bolder;
+    color: #ffffff;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.192);
+    overflow: hidden;
+    transition-duration: .3s;
+    width: fit-content;
+}
+
+.contatoForm button:hover::before {
+    transform: translate(0, -50%);
+}
+
+.contatoForm button:active {
+    transform: translateY(4px);
+    transition-duration: .3s;
+}
+
+/* MOBILE
+CONTATO */
+@media (max-width: 768px) {
+
+    .containerContatos h3 {
+        font-size: 42px;
+        margin-bottom: 40px;
+    }
+
+    /* REMOVE TELEFONE GRANDE NO MOBILE */
+    .telefoneDecorativo {
+        display: none;
+    }
+
+    .contatoGrid {
+        grid-template-columns: 1fr;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-left: 25px;
+        gap: 40px;
+    }
+
+    .contatoItem img {
+        width: 35px;
+    }
+
+    .contatoItem span {
+        font-size: 16px;
+    }
+
+    .contatoInfo h4 {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .contatoInfo p {
+        margin-top: 30px;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    
+
+}
+
+/*FOOTER*/
+#footer {
+    background: #940404;
+    padding: 0 80px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    color: white;
+}
+
+.containerFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footerLogo {
+    max-width: 300px;
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+}
+
+.nav-list-footer {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding: 0;
+}
+
+.nav-list-footer a {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.footerRedeSociais {
+    display: flex;
+    gap: 20px;
+}
+
+.footerEnd {
+    font-family: "IBM Plex Mono", monospace;
+    border-top: 1px solid rgb(255, 255, 255);
+    margin-top: 50px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    #footer {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .containerFooter {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .footerLogo {
+        max-width: 100%;
+    }
+
+    .footerLogo p {
+        margin-top: 15px;
+    }
+
+    .nav-list-footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footerRedeSociais {
+        justify-content: center;
+    }
+
+    .footerEnd {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        font-size: 13px;
+    }
+}

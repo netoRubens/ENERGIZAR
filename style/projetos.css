@@ -1,0 +1,119 @@
+#maisProjetos {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.todosProjetos {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.todosProjetos h2 {
+    font-family: "Crimson Text", serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: #940404;
+    margin-bottom: 60px;
+    font-size: 50px;
+}
+
+/* GRID */
+.gridProjetos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* CARD */
+.cardP {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 6 / 5;
+    /* deixa todos quadrados */
+    cursor: pointer;
+}
+
+/* IMAGEM */
+.cardP img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.cardP:hover img {
+    transform: scale(1.08);
+}
+
+/* OVERLAY */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0));
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.45s ease, transform 0.45s ease;
+}
+
+.cardP:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.overlay h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.overlay p {
+    color: #ddd;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 1000px) {
+    .gridProjetos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .todosProjetos h2 {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 520px) {
+    .gridProjetos {
+        grid-template-columns: 1fr;
+    }
+
+    .todosProjetos h2 {
+        font-size: 42px;
+    }
+
+    .subTitulo h3 {
+        text-align: center;
+    }
+
+}
+
+.subTitulo h3 {
+    font-family: "Crimson Text", serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: #940404;
+    margin-bottom: 30px;
+}
