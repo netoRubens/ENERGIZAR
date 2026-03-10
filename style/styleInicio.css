@@ -131,30 +131,27 @@ section {
 
 }
 
-.divisor {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
+.divisor{
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
 }
 
-.divisor img {
-    pointer-events: none;
-    width: 1366px;
-    z-index: 1;
-    display: block;
+.divisor img{
+width:100%;
+display: block;
 }
 
-.antenas {
-    position: absolute;
-    bottom: 30px;
-    right: 150px;
+.antenas{
+position:absolute;
+bottom:0;
+right:18%;
+top: 12%;
 }
 
-.antenas img {
-    pointer-events: none;
-    width: 400px;
-    z-index: 1;
+.antenas img{
+width:clamp(200px, 25vw, 400px);
 }
 
 .capaceteInicio {
@@ -199,6 +196,10 @@ section {
 /*SOBRE NOS*
 DADOS*/
 
+#sobreNos{
+    background-color: #fff;
+}
+
 .dados {
     display: flex;
     justify-content: space-around;
@@ -222,7 +223,6 @@ DADOS*/
 .grade img {
     width: 100%;
     display: block;
-
 }
 
 .dadosSobre h3 {
@@ -605,6 +605,10 @@ VALORES*/
 }
 
 /*NOSSOS SERVIÇOS*/
+#servicos {
+    background-color: #fff;
+}
+
 .servicos {
     text-align: center;
     padding: 40px 30px;
