@@ -1032,7 +1032,7 @@ PROJETOS*/
 
 /* MOBILE
 CONTATO */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
 
     .containerContatos h3 {
         font-size: 42px;
