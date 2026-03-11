@@ -67,6 +67,7 @@ section {
 .btnInicio {
     position: relative;
     z-index: 10;
+    margin-bottom: 20vh;
 }
 
 .btnProjetos {
@@ -128,7 +129,6 @@ section {
     margin-top: 40px;
     display: flex;
     gap: 20px;
-
 }
 
 .divisor{
@@ -141,17 +141,6 @@ width:100%;
 .divisor img{
 width:100%;
 display: block;
-}
-
-.antenas{
-position:absolute;
-bottom:0;
-right:18%;
-top: 12%;
-}
-
-.antenas img{
-width:clamp(200px, 25vw, 400px);
 }
 
 .capaceteInicio {
@@ -184,10 +173,6 @@ width:clamp(200px, 25vw, 400px);
     }
 
     .btnContato {
-        display: none;
-    }
-
-    .antenas {
         display: none;
     }
 
