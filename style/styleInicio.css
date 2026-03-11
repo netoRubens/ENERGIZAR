@@ -285,7 +285,10 @@ DADOS*/
     }
 
     .grade {
-        width: 150%;
+        display: none;
+    }
+
+    .gradeMobile {
         overflow-x: hidden;
     }
 
