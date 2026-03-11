@@ -245,6 +245,10 @@ DADOS*/
     color: #940404;
 }
 
+.gradeMobile {
+    display: none;
+}
+
 /*MOBILE
 SOBRE NOS*
 DADOS*/
@@ -289,6 +293,8 @@ DADOS*/
     }
 
     .gradeMobile {
+        display: block;
+        width: 100%;
         overflow-x: hidden;
     }
 
