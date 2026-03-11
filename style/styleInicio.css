@@ -131,16 +131,16 @@ section {
     gap: 20px;
 }
 
-.divisor{
-position:absolute;
-bottom:0;
-left:0;
-width:100%;
+.divisor {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
-.divisor img{
-width:100%;
-display: block;
+.divisor img {
+    width: 100%;
+    display: block;
 }
 
 .capaceteInicio {
@@ -181,7 +181,7 @@ display: block;
 /*SOBRE NOS*
 DADOS*/
 
-#sobreNos{
+#sobreNos {
     background-color: #fff;
 }
 
@@ -894,7 +894,7 @@ PROJETOS*/
         height: 250px;
     }
 
-    
+
 
 }
 
@@ -910,7 +910,7 @@ PROJETOS*/
     display: flex;
     justify-content: center;
     color: #940404;
-    margin-top: 40px;    
+    margin-top: 40px;
     margin-bottom: 50px;
     font-size: 50px;
 }
@@ -1070,7 +1070,7 @@ CONTATO */
         font-size: 16px;
         line-height: 1.6;
     }
-    
+
 
 }
 
