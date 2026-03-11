@@ -284,6 +284,10 @@ DADOS*/
         left: 50%;
     }
 
+    .grade {
+        overflow-x: hidden;
+    }
+
 }
 
 
